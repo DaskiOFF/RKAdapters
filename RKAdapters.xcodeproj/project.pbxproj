@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BB496ED120D28ADE00F294DC /* RKAdapters.h in Headers */ = {isa = PBXBuildFile; fileRef = BB496ECF20D28ADE00F294DC /* RKAdapters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB496ED920D28BE900F294DC /* TextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB496ED820D28BE900F294DC /* TextFieldAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB496ECC20D28ADE00F294DC /* RKAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB496ECF20D28ADE00F294DC /* RKAdapters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAdapters.h; sourceTree = "<group>"; };
 		BB496ED020D28ADE00F294DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB496ED820D28BE900F294DC /* TextFieldAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,11 +48,20 @@
 		BB496ECE20D28ADE00F294DC /* RKAdapters */ = {
 			isa = PBXGroup;
 			children = (
+				BB496ED720D28BD800F294DC /* Sources */,
 				BB496ECF20D28ADE00F294DC /* RKAdapters.h */,
 				BB496ED020D28ADE00F294DC /* Info.plist */,
 			);
 			path = RKAdapters;
 			sourceTree = "<group>";
+		};
+		BB496ED720D28BD800F294DC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB496ED820D28BE900F294DC /* TextFieldAdapter.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					BB496ECB20D28ADE00F294DC = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB496ED920D28BE900F294DC /* TextFieldAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 		BB496ED520D28ADE00F294DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,6 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAdapters;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +298,7 @@
 		BB496ED620D28ADE00F294DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
