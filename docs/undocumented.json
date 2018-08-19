@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 3,
+      "symbol": "TextFieldAdapter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 30,
+      "symbol": "TextFieldAdapter.init(textField:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 41,
+      "symbol": "TextFieldAdapter.setDidReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 45,
+      "symbol": "TextFieldAdapter.setDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 49,
+      "symbol": "TextFieldAdapter.setDidEndEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 53,
+      "symbol": "TextFieldAdapter.setDidTextChanged(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters/Sources/TextFieldAdapter.swift",
+      "line": 57,
+      "symbol": "TextFieldAdapter.setShouldChangeCharacters(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKAdapters"
+}

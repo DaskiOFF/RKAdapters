@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1493552129FC0F004952B2 /* TextFieldAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1493542129FC0F004952B2 /* TextFieldAdapterTests.swift */; };
+		BB1493572129FC0F004952B2 /* RKAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB496ECC20D28ADE00F294DC /* RKAdapters.framework */; };
 		BB496ED120D28ADE00F294DC /* RKAdapters.h in Headers */ = {isa = PBXBuildFile; fileRef = BB496ECF20D28ADE00F294DC /* RKAdapters.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB496ED920D28BE900F294DC /* TextFieldAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB496ED820D28BE900F294DC /* TextFieldAdapter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB1493582129FC0F004952B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB496EC320D28ADE00F294DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB496ECB20D28ADE00F294DC;
+			remoteInfo = RKAdapters;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		BB1493522129FC0F004952B2 /* RKAdaptersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKAdaptersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1493542129FC0F004952B2 /* TextFieldAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAdapterTests.swift; sourceTree = "<group>"; };
+		BB1493562129FC0F004952B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB496ECC20D28ADE00F294DC /* RKAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB496ECF20D28ADE00F294DC /* RKAdapters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKAdapters.h; sourceTree = "<group>"; };
 		BB496ED020D28ADE00F294DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -19,6 +34,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BB14934F2129FC0F004952B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1493572129FC0F004952B2 /* RKAdapters.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB496EC820D28ADE00F294DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +52,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1493532129FC0F004952B2 /* RKAdaptersTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1493542129FC0F004952B2 /* TextFieldAdapterTests.swift */,
+				BB1493562129FC0F004952B2 /* Info.plist */,
+			);
+			path = RKAdaptersTests;
+			sourceTree = "<group>";
+		};
 		BB496EC220D28ADE00F294DC = {
 			isa = PBXGroup;
 			children = (
 				BB496ECE20D28ADE00F294DC /* RKAdapters */,
+				BB1493532129FC0F004952B2 /* RKAdaptersTests */,
 				BB496ECD20D28ADE00F294DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				BB496ECC20D28ADE00F294DC /* RKAdapters.framework */,
+				BB1493522129FC0F004952B2 /* RKAdaptersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +111,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BB1493512129FC0F004952B2 /* RKAdaptersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB14935C2129FC10004952B2 /* Build configuration list for PBXNativeTarget "RKAdaptersTests" */;
+			buildPhases = (
+				BB14934E2129FC0F004952B2 /* Sources */,
+				BB14934F2129FC0F004952B2 /* Frameworks */,
+				BB1493502129FC0F004952B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1493592129FC0F004952B2 /* PBXTargetDependency */,
+			);
+			name = RKAdaptersTests;
+			productName = RKAdaptersTests;
+			productReference = BB1493522129FC0F004952B2 /* RKAdaptersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BB496ECB20D28ADE00F294DC /* RKAdapters */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB496ED420D28ADE00F294DC /* Build configuration list for PBXNativeTarget "RKAdapters" */;
@@ -101,9 +153,13 @@
 		BB496EC320D28ADE00F294DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Roman Kotov";
 				TargetAttributes = {
+					BB1493512129FC0F004952B2 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					BB496ECB20D28ADE00F294DC = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
@@ -123,11 +179,19 @@
 			projectRoot = "";
 			targets = (
 				BB496ECB20D28ADE00F294DC /* RKAdapters */,
+				BB1493512129FC0F004952B2 /* RKAdaptersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB1493502129FC0F004952B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB496ECA20D28ADE00F294DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +202,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB14934E2129FC0F004952B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1493552129FC0F004952B2 /* TextFieldAdapterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB496EC720D28ADE00F294DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,7 +220,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BB1493592129FC0F004952B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB496ECB20D28ADE00F294DC /* RKAdapters */;
+			targetProxy = BB1493582129FC0F004952B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		BB14935A2129FC10004952B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RKAdaptersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAdaptersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB14935B2129FC10004952B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RKAdaptersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.waydeveloper.RKAdaptersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BB496ED220D28ADE00F294DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB14935C2129FC10004952B2 /* Build configuration list for PBXNativeTarget "RKAdaptersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB14935A2129FC10004952B2 /* Debug */,
+				BB14935B2129FC10004952B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB496EC620D28ADE00F294DC /* Build configuration list for PBXProject "RKAdapters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RKAdapters'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'UI Adapters'
 
 # This description is used to generate tags and improve search results.
@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   UI Adapters
+  
+  0.1.1
+    Add ShouldChangeCharacters; tests; docs
 
   0.1.0
     Init
