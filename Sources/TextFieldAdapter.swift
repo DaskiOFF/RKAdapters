@@ -1,24 +1,32 @@
 import UIKit
 
 open class TextFieldAdapter {
+    /// Used textField for current TextFieldAdapter
     private(set) public var textField: UITextField
     
     // MARK: - Properties
     private var textFieldAdapterDelegate: TextFieldAdapterDelegate!
+    /// Default value for delegate method 'textFieldShouldReturn'
     public var shouldReturn: Bool
     
-    // MARK: - Callbacks
+    // MARK: - Closure types
+    /// Closure for delegate method 'textFieldShouldReturn'
     public typealias DidReturn = (UITextField) -> Bool
+    /// Closure for delegate methods 'textFieldDidBeginEditing' and 'textFieldDidEndEditing'
     public typealias DidBeginEndEditing = (UITextField) -> Void
+    /// Closure for target action '.editingChanged'
     public typealias DidTextChanged = (_ textField: UITextField, _ text: String) -> Void
+    /// Closure for delegate method 'textField(:, shouldChangeCharactersIn:, replacementString:)'
     public typealias ShouldChangeCharacters = (_ textField: UITextField, _ shouldChangeCharactersIn: NSRange, _ replacementString: String) -> Bool
     
+    // MARK: - Callbacks closures
     private(set) var didReturn: DidReturn?
     private(set) var didBeginEditing: DidBeginEndEditing?
     private(set) var didEndEditing: DidBeginEndEditing?
     private(set) var didTextChanged: DidTextChanged?
     private(set) var shouldChangeCharacters: ShouldChangeCharacters?
     
+    // MARK: - Init
     public init(textField: UITextField = UITextField()) {
         self.textField = textField
         shouldReturn = true
