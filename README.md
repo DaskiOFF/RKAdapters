@@ -5,6 +5,22 @@
 [![License](https://img.shields.io/cocoapods/l/RKAdapters.svg?style=flat)](https://cocoapods.org/pods/RKAdapters)
 [![Platform](https://img.shields.io/cocoapods/p/RKAdapters.svg?style=flat)](https://cocoapods.org/pods/RKAdapters)
 
+## Usage
+
+```swift
+var textField = UITextField()
+lazy var textAdapter = TextFieldAdapter(textField: textField)
+// or var textAdapter = TextFieldAdapter()
+
+textAdapter.setShouldChangeCharacters { tf, range, string in
+    // do something
+}
+
+textAdapter.setDidTextChanged { textField, text in
+    // do something
+}
+```
+
 ## Documentations
 
 https://daskioff.github.io/RKAdapters/
