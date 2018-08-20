@@ -8,8 +8,11 @@
 ## Usage
 
 ```swift
+// init variant 1
 var textField = UITextField()
 lazy var textAdapter = TextFieldAdapter(textField: textField)
+
+// init variant 2. TextField will be created in TextFieldAdapter
 // or var textAdapter = TextFieldAdapter()
 
 textAdapter.setShouldChangeCharacters { tf, range, string in
